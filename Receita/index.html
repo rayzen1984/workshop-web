@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Niguiri de Salmão</title>
+	<link rel="stylesheet" type="text/css" href="meuestilo.css">
+	<script type="text/javascript">
+		function fechar(){
+			var fundo = document.getElementById("fundo");
+			fundo.style.display = "none";
+		}
+		function exibir(tag){
+			var img = document.getElementById("foto");
+			var fundo = document.getElementById("fundo");
+			fundo.style.display = "block";
+			img.src = tag.src;
+			img.classList.add("aumentar_img");
+		}
+	</script>
+</head>
+<body>
+	<div class="topo">
+		<div class="logo">
+			<img src="hobbie.png" width="150" height="150" >
+		</div>
+		<div class="menu">
+			<ul>
+				<li><a href="index.html">Principal</a></li>
+				<li><a href="niguirisalmao.html">Receita</a></li>
+				<li><a href="falecomigo.html">Fale comigo</a></li>
+			</ul>
+		</div>
+		
+	</div>
+	<div class="fundo">
+		<div class="conteudo">
+			<div class="minhacomida">
+			<h1>Niguiri de Salmão</h1>
+			<a href="https://imirante.com/namira/brasil/noticias/2016/01/25/niguiri-de-salmao.shtml">Acesse a receita original</a>
+			<p>
+				O niguiri é um tipo de sushi feito com arroz prensado e coberto com uma fatia fina de peixe. Não existe um peixe ideal para preparar essas peças, são muitas as opções!, porém, aqui, é hora de aprender versões de niguiri de salmão, um dos peixes mais nobres e populares quando o assunto é comida japonesa.
+			</p>
+			</div>
+			<div class="ingredientes">
+			<h3>Ingredientes</h3>
+			<ul>
+				<li>2 xícaras de chá de arroz próprio para comida japonesa</li>
+				<li>3 xícaras de chá de água</li>
+				<li>2 colheres de sopa de vinagre de arroz</li>
+				<li>2 colheres de chá de açúcar</li>
+				<li>500 g de salmão (preferencialmente partes do meio, para o pra ficar mais bonito)</li>
+				<li>shoyu a gosto</li>
+			</ul>
+			</div>
+			<div class="modopreparo">
+			<h3>Modo de preparo</h3>
+			<ol>
+				<li>Lave o arroz e deixe escorrer, enquanto escorre, corte o salmão em pedaços de 2 à 3 cm de largura, lembrando que a espessura de cada pedaço deve ser de pelo menos 0,5 cm.</li>
+				<li>Em uma panela, coloque o arroz e a água, leve ao fogo alto até levantar fervura, após ferver baixe o fogo e deixe cozinhar.</li>
+				<li>Em um copo, coloque o vinagre e o açúcar e mexa até dissolver todo o açúcar.</li>
+				<li>Solte o arroz em uma tigela e deixa esfriar, em seguida coloque a mistura de vinagre com açúcar.</li>
+				<li>Com a ajuda de duas colheres faça bolinhos e solte-os num prato, coloque o filé de salmão sobre cada bolinho e decore com shoyu.</li>
+				<li>Sirva acompanhado de um saquê de sua preferência.</li>
+			</ol>
+				
+				<img src="niguiri.jpg" width="200" height="200" onclick="exibir(this)">
+				<figcaption>Clique na imagem para ampliar</figcaption>
+				
+			</div>
+		</div>
+	</div>
+	<div id="fundo" class="fundo2">
+		<span class="fechar" onclick="fechar()">X</span>
+		<img id="foto">
+	</div>
+	
+</body>
+</html>
