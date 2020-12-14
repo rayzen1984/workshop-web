@@ -1,0 +1,68 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Niguiri de Salmão</title>
+	<link rel="stylesheet" type="text/css" href="meuestilo.css">
+	<script type="text/javascript">
+		function fechar(){
+			var fundo = document.getElementById("fundo");
+			fundo.style.display = "none";
+		}
+		function exibir(tag){
+			var img = document.getElementById("foto");
+			var fundo = document.getElementById("fundo");
+			fundo.style.display = "block";
+			img.src = tag.src;
+			img.classList.add("aumentar_img");
+		}
+	</script>
+</head>
+<body>
+	<div class="topo">
+		<div class="logo">
+			<img src="hobbie.png" width="150" height="150" >
+		</div>
+		<div class="menu">
+			<ul>
+				<li><a href="index.html">Principal</a></li>
+				<li><a href="niguirisalmao.html">Receita</a></li>
+				<li><a href="falecomigo.html">Fale comigo</a></li>
+			</ul>
+		</div>
+		
+	</div>
+	<div class="fundo">
+		<div class="conteudo">
+			<div class="minhacomida">
+				<h1>Projeto web da receita do workshop web</h1>
+			</div>
+			
+		</div>
+	</div>
+	<div id="fundo" class="fundo2">
+		<span class="fechar" onclick="fechar()">X</span>
+		<img id="foto">
+	</div>
+	<div class="rodape">
+		<div class="direita">
+			 
+			 <h5>Página desenvolvida por Luiz Felipe C. G. Ferreira, aluno do curso de Programação Web do IFPA.</h5>	
+			 <h6>@2020 LFCGF. Todos os direitos reservados.</h6>
+		</div>
+		<div class="meio">
+			 <h4>Contato</h4>
+			 <h5>Email: luizfelipecgf@gmail.com</h5>
+			 <h5>Fone: (82) 9 9659-8656</h5>
+		</div>
+		<div class="esquerda">
+			 <h4>Midias Sociais</h4>
+			 <h5>
+			 <a href="https://www.instagram.com/luizfelipecgf/" target="_blank"><img src="insta.png" width="30" height="30">	</a>
+			 <br>
+			 <a href="https://www.facebook.com/luizfelipe.cavalcanti.5" target="_blank"><img src="face.png" width="30" height="30"></a>
+			</h5>
+		</div>
+	</div> 
+</body>
